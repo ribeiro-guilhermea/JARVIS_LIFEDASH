@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Life Dashboard</title>
+  <meta name="theme-color" content="#14161a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Life">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/">Life Dashboard</a>
+    <nav class="nav" id="nav">
+      <a href="#/" data-route="semana">Semana</a>
+      <a href="#/areas" data-route="areas">Áreas</a>
+      <a href="#/habitos" data-route="habitos">Hábitos</a>
+      <a href="#/revisao" data-route="revisao">Revisão</a>
+      <a href="#/progresso" data-route="progresso">Progresso</a>
+      <a href="#/ajustes" data-route="ajustes">Ajustes</a>
+    </nav>
+    <button class="icon-btn" id="fullscreen" title="Tela cheia" aria-label="Tela cheia">⛶</button>
+  </header>
+  <main id="app" class="container" aria-live="polite">
+    <p class="muted">Carregando…</p>
+  </main>
+  <div id="modal-root"></div>
+  <div id="toasts" class="toasts" aria-live="assertive"></div>
+  <noscript>Ative o JavaScript para usar o Life Dashboard.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>

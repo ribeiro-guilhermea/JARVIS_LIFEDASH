@@ -1,0 +1,21 @@
+{
+  "name": "jarvis-lifedash",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Life Dashboard + Jarvis + Obsidian: sistema pessoal de organização e memória externa.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/main.js",
+    "test": "node --disable-warning=ExperimentalWarning --test",
+    "backup": "node --disable-warning=ExperimentalWarning src/backup/cli.js backup",
+    "backup:vault": "node --disable-warning=ExperimentalWarning src/backup/cli.js backup --with-vault",
+    "restore": "node --disable-warning=ExperimentalWarning src/backup/cli.js restore",
+    "backups": "node --disable-warning=ExperimentalWarning src/backup/cli.js list",
+    "mcp": "node --disable-warning=ExperimentalWarning src/jarvis/mcp-server.js",
+    "doctor": "node --disable-warning=ExperimentalWarning scripts/doctor.js"
+  },
+  "license": "UNLICENSED"
+}
